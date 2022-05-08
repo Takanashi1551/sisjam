@@ -1,0 +1,158 @@
+/* Control de toda la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+/* Llamada de cada clase en orden*/
+.fondo-color {
+    background: rgba(6, 61, 32, 1);
+}
+
+.contendor-img-logo {
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: grid;
+}
+
+.contenedor-form {
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+    color: #000;
+    border-radius: 15px;
+}
+
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Parte para los campos text, password, email. Controla todo los procesos basicos */
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"] {
+    font-style: italic;
+    outline: none;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    transition: all .5s ease;
+}
+
+/* Parte para el boton */
+.contenedor-form input[type="submit"] {
+    background: rgba(6, 61, 32, 1);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: Arial, Helvetica, Verdana;
+    ;
+    letter-spacing: 1px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Parte para color atas al boton */
+.contenedor-form input[type="submit"]:hover {
+    background: rgb(6, 105, 11);
+    transition: all .5s ease;
+}
+
+/* Control para el formulario*/
+.contenedor-form .formulario {
+    padding: 40px;
+    display: none;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}
+
+/*<--    parte para poder controlar las vistas de dispositivos      -->*/
+@media screen and (max-width: 800px) {
+
+    .contenedor-form {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        /*esto es para poder centrar todo*/
+        margin: 0px auto;
+        border-radius: 5px;
+    }
+
+    .contendor-img-logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .contenedor-form {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        /*esto es para poder centrar todo*/
+        margin: 0px auto;
+        border-radius: 5px;
+        /* padding: 40px;*/
+    }
+
+    .contendor-img-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*-- Inicio para poder crear el inicio de administrador, usuario y superusuario --*/
+
+
+
+
+
+
+
+
+
+
